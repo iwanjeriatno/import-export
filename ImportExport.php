@@ -55,7 +55,8 @@ class ImportExport
                 $sheet->setHeight(array(
                     1 => 20, 2 => 20, 3 => 20, 5 => 18
                 ));
-                $sheet->setBorder('A4:H26', 'thin', "D8572C");
+                $row = count($data) + 4;
+                $sheet->setBorder('A4:'.$cell.''.$row, 'thin', "D8572C");
             });
 
         })->download('xlsx');
