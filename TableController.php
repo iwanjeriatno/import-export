@@ -7,7 +7,7 @@ use ImportExport;
 use App\Models\Table;
 use Illuminate\Http\Request;
 
-class VendorTipeController extends Controller
+class TableController extends Controller
 {
     protected $export;
     public function __construct()
